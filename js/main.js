@@ -12,28 +12,28 @@ window.onload = function() {
     
     //Image loading
     game.preload(
+        'bound.ogg',
+        'need.ogg',
+        'onsight.ogg',
+        'black.ogg',
+        'new.ogg',
         'map0.gif', 
         'chara0.gif',
         'img/bg/leaves.jpg',
-        'need.mp3',
         'img/apple.png',
-        'onsight.mp3',
-        'black.mp3',
         'chara1.gif',
         'chara2.gif',
         'icon0.gif',
         'map2.gif',
         'walk1.wav',
         'bomb1.wav',
-        'new.mp3',
         'net.png',
         'se2.wav',
-        'send.mp3',
+        'send.ogg',
         'se1.wav',
         'se6.wav',
-        'leaves.mp3',
-        'img/bg/bound.png',
-        'bound.mp3'
+        'leaves.ogg',
+        'img/bg/bound.png'
         );
     game.onload = function() {
 
@@ -242,7 +242,7 @@ window.onload = function() {
             var apples = Array(appleNum);
             var inGame = true;
 
-            var music = game.assets['onsight.mp3'];
+            var music = game.assets['onsight.ogg'];
 
 
             music.play();
@@ -292,7 +292,7 @@ window.onload = function() {
                 if (lastAppleNum == 0) {
                     inGame = false;
                     music.stop();
-                    game.assets['need.mp3'].play();
+                    game.assets['need.ogg'].play();
 
                     game.popScene();
                     
@@ -312,7 +312,7 @@ window.onload = function() {
             var SIZE_X = 32;
             var SIZE_Y = 32;
 
-            var music = game.assets['black.mp3'];
+            var music = game.assets['black.ogg'];
             music.play();
 //画像
             var CHARA_GRAPHICS = 'chara1.gif';
@@ -900,7 +900,7 @@ window.onload = function() {
         initialize: function(){ 
             Scene.apply(this);
             var bear = new Sprite(32, 32);
-            var music = game.assets['new.mp3'];
+            var music = game.assets['new.ogg'];
             music.play();
         //画像を選択
         bear.image = game.assets['chara1.gif'];
@@ -1226,7 +1226,7 @@ window.onload = function() {
     var SendScene = Class.create(Scene, {
         initialize: function(){
             Scene.apply(this);
-            var music = game.assets['send.mp3'];
+            var music = game.assets['send.ogg'];
             music.play();
             var that = this;
             var Net = enchant.Class.create(enchant.Sprite, {
@@ -1357,7 +1357,7 @@ window.onload = function() {
     var LeavesScene = Class.create(Scene,{
         initialize: function(){
             Scene.apply(this);
-            var music = game.assets['leaves.mp3'];
+            var music = game.assets['leaves.ogg'];
             music.play();
             var scene = this;
             game.score = 0;
@@ -1666,7 +1666,7 @@ window.onload = function() {
         Scene.apply(this);
 
         var scene = this;
-        var music = game.assets['bound.mp3'];
+        var music = game.assets['bound.ogg'];
         music.play();
         var stage = new Group();
     var player = new Sprite(32, 32);
