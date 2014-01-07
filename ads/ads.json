@@ -1,0 +1,27 @@
+[
+  {
+    "headline": "Kanye West - Yeezus",
+    "imageUrl": "ads/img/yeezus.jpg",
+    "text": "Yeezus is the latest studio album from Kanye West",
+    "link": "https://itunes.apple.com/us/album/yeezus/id662392801?uo=4&at=1l3v559"
+  },
+  {
+    "headline": "Kanye West & Jay Z - Watch The Throne",
+    "imageUrl": "ads/img/watchthethrone.jpg",
+    "text": "Collaboration Album with two hip-hop greats",
+    "link": "https://itunes.apple.com/us/album/watch-throne-deluxe-version/id455402261?uo=4&at=1l3v559"
+  },
+  {
+    "headline": "Kanye West - MBDTF",
+    "imageUrl": "ads/img/mbdtf.jpg",
+    "text": "My Beautiful Dark Twisted Fantasy is the fifth studio album from Kanye West",
+    "link":"https://itunes.apple.com/us/album/my-beautiful-dark-twisted/id403837134?uo=4&at=1l3v559"
+  },
+  {
+    "headline": "Kanye West - Graduation",
+    "imageUrl": "ads/img/graduation.jpg",
+    "text": "Graduation is the third studio Album from Kanye West",
+    "link": "https://itunes.apple.com/us/album/graduation/id401264138?uo=4&at=1l3v559"
+  }
+
+]
