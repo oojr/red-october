@@ -5144,7 +5144,7 @@ enchant.WebAudioSound = enchant.Class.create(enchant.EventTarget, {
             }
             this.src = actx.createBufferSource();
             this.src.buffer = this.buffer;
-            this.src.gain.value = this._volume;
+            // this.src.gain.value = this._volume;
             this.src.connect(this.connectTarget);
             this.src.noteOn(0);
         }
